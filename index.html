@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 </head>
 <body>
 
-    <div>
-        <form>
-            <div><p id="name">name</p>
-                <input id ="t" type="text"></div>//this 
-                <button id="button" onclick="add">click the button</button>  
-            
+  <div>
+    <form onsubmit="return false;"> <!-- prevent reload -->
+      <div>
+        <p id="name">name</p>
+        <input id="it" type="text" />
+      </div>
 
-
+      <!-- ✅ Fix onclick handler: should call the function -->
+      <button id="button" onclick="add()">click the button</button>
     </form>
+  </div>
 
-    </div>
+  <!-- ✅ Fix <script> tag spelling and src path -->
+  <script src="pro.js"></script>
 
-
-    
 </body>
-<scripe src="pro"></scripe>
-
-
 </html>
