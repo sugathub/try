@@ -1,16 +1,16 @@
-
+import {useState} from "react";
 function App() {
   
-let name ="sugat";
+let [Name ,setName]=useState("sugat");
 
-let reverceName= (name) =>{
-  return name.split("").reverse().join("");
+let reverceName= () =>{
+  return setName(Name.split("").reverse().join(""));
 
 } ;
   return (
     <>
-    <h1>my name is {name}</h1>
-    <button onClick={reverceName(name)}> click me</button>
+    <h1>my name is {Name}</h1>
+    <button onClick={reverceName}> click me</button>
     </>
   )
 }
